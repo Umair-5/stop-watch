@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stop Watch</title>
+</head>
+
+<body>
+    <h1>Digital Clock</h1>
+
+    <div class="clock">
+
+        <input id="hour" type="text" readonly>
+        <input id="minute" type="text" readonly value="0">
+        <input id="second" type="text" readonly value="0">
+        <input id="amPm" type="text" readonly value="0">
+
+    </div>
+    <main>
+
+        <h1>Stop Watch</h1>
+        <div class="watch">
+            <h2 id="hour">0</h2>
+            <h2 id="min">0</h2>
+            <h2 id="sec">0</h2>
+            <h2 id="msec">0</h2>
+        </div>
+        <div class="units">
+            <h2>Hour</h2>
+            <h2>Minutes</h2>
+            <h2>Seconds</h2>
+            <h2>Milliseconds</h2>
+        </div>
+        <div id="buttons">
+            <button onclick="startTimer()" id="start-btn">Start</button>
+            <button onclick="pause()" id="pause-btn">Pause</button>
+            <button onclick="resume()" id="resume-btn" disabled>Resume</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="lap()">Lap</button>
+        </div>
+        <div id="laps"></div>
+    </main>
+    <footer>
+        <p>Developed by <a href="https://uskdev.netlify.app/">USK</a></p>
+    </footer>
+</body>
+<script src="app.js"></script>
+
+</html>
