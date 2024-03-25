@@ -31,12 +31,6 @@ h1 {
     color: aliceblue;
 }
 
-span {
-    color: aliceblue;
-    margin-top: 8px;
-
-}
-
 h2 {
     color: aliceblue;
     width: 100px;
@@ -92,4 +86,22 @@ footer {
 footer a {
     text-decoration: none;
     color: #d8a4ff;
+}
+@media only screen and (max-device-width: 480px) {
+    #buttons{
+flex-wrap: wrap;
+margin-top: 20px;
+    }
+    button{
+        margin: 7px 10px;
+        height: 30px;
+        width: 90px;
+    }
+    .clock input {
+        width: 17vw;
+       
+    }
+    h2 {
+        font-size: 16px;
+    }
 }
