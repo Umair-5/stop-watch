@@ -9,17 +9,19 @@
 </head>
 
 <body>
-    <h1>Digital Clock</h1>
+    <section id="digital-clock">
+        <h1>Digital Clock</h1>
 
-    <div class="clock">
-
-        <input id="hour" type="text" readonly>
-        <input id="minute" type="text" readonly value="0">
-        <input id="second" type="text" readonly value="0">
-        <input id="amPm" type="text" readonly value="0">
-
-    </div>
-    <main>
+        <div class="clock">
+    
+            <input id="hour" type="text" readonly>
+            <input id="minute" type="text" readonly value="0">
+            <input id="second" type="text" readonly value="0">
+            <input id="amPm" type="text" readonly value="0">
+    
+        </div>
+    </section>
+    <section id="stop-watch">
 
         <h1>Stop Watch</h1>
         <div class="watch">
@@ -42,7 +44,7 @@
             <button onclick="lap()">Lap</button>
         </div>
         <div id="laps"></div>
-    </main>
+    </section>
     <footer>
         <p>Developed by <a href="https://uskdev.netlify.app/">USK</a></p>
     </footer>

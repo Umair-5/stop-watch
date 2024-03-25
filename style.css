@@ -7,16 +7,17 @@
 body {
     background-color: #201D2E;
 }
-
+#digital-clock{
+    margin-top: 10vh;
+}
 h1 {
-    margin: 0% auto;
+    margin: 0% auto 5vh;
     text-align: center;
-    color: #54475E;
+    color: #d8a4ff;
 }
 
 .clock {
     display: flex;
-
     width: fit-content;
     margin: 0% auto;
 }
@@ -28,7 +29,6 @@ h1 {
     font-family: "Orbitron", sans-serif;
     width: 7vw;
     color: aliceblue;
-
 }
 
 span {
@@ -43,9 +43,9 @@ h2 {
     text-align: center;
 }
 
-
-
-
+#stop-watch{
+margin-top: 10vh;
+}
 
 .watch,
 .units {
@@ -81,38 +81,6 @@ button:hover {
     width: max-content;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     bottom: 0px;
     position: absolute;
@@ -123,5 +91,5 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #54475E;
+    color: #d8a4ff;
 }

@@ -10,9 +10,6 @@ function time() {
 }
 setInterval(time, 1000)
 time();
-
-
-
 var hour = 0, min = 0, sec = 0, msec = 0;
 var startBtn = document.querySelector("#start-btn");
 var resumeBtn = document.querySelector("#resume-btn");
@@ -25,10 +22,7 @@ resumeBtn.style.cursor = "not-allowed"
 var timerStarted = false;
 function startTimer() {
     if (!timerStarted) {
-        hour = 0;
-        min = 0;
-        sec = 0;
-        msec = 0;
+
         timerInterval = setInterval(function () {
             msec++;
             msecH2.innerHTML = msec;
@@ -74,17 +68,21 @@ function lap() {
     var laps = document.querySelector("#laps");
     var lapInfo = document.createElement('p');
     lapInfo.setAttribute('class', 'lapInfo')
-    lapInfo.innerHTML = `${i} ${hour}:${min}:${sec}:${msec}`
+    lapInfo.innerHTML = `Lap ${i}: ${hour}:${min}:${sec}:${msec}`
     laps.appendChild(lapInfo)
 
 }
 function reset() {
     clearInterval(timerInterval);
+    hour = 0;
+    min = 0;
+    sec = 0;
+    msec = 0;
     timerStarted = false;
-    msecH2.innerHTML = 0;
-    secH2.innerHTML = 0;
-    minH2.innerHTML = 0;
-    hourH2.innerHTML = 0;
+    msecH2.innerHTML = msec;
+    secH2.innerHTML = sec;
+    minH2.innerHTML = min;
+    hourH2.innerHTML = hour;
     startBtn.disabled = false;
     startBtn.style.cursor = "pointer"
     document.querySelectorAll(".lapInfo").forEach(e => e.remove());
